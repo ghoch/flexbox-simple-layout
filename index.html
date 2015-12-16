@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlexBox Nav</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <header class="top">
+      <h1><a href="#">Simple Flexbox Layout</a></h1>
+    </header>
+
+    <nav class="flex-nav">
+      <a href="#" class="toggleNav">☰ Menu</a>
+      <ul>
+        <li><a href="#">Nav 01</a></li>
+        <li><a href="#">Nav 02</a></li>
+        <li><a href="#">Nav 03</a></li>
+        <li><a href="#">Nav 04</a></li>
+        <li><a href="#">Nav 05</a></li>
+        <li><a href="#">Nav 06</a></li>
+        <li class="social">
+          <a href="http://twitter.com"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="social">
+          <a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li class="social">
+          <a href="http://github.com"><i class="fa fa-github"></i></a>
+        </li>
+        <li class="social">
+          <a href="http://instagram.com"><i class="fa fa-instagram"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <img src="http://lorempixel.com/1000/600/abstract">
+    </section>
+
+    <section class="details">
+      <p>Don't follow Chuck Norris on Twitter unless you want a roundhouse kick to the face. He doesn't like to be followed, Contrary to popular belief, America is not a democracy, it is a Chucktatorship, If you spell Chuck Norris in Scrabble, you win. Forever, There is no theory of evolution. Just a list of animals Chuck Norris allows to live Chuck Norris will attain statehood in 2009. His state flower will be the Magnolia, Chuck Norris does not get frostbite. Chuck Norris bites frost, If you spell Chuck Norris in Scrabble, you win. Forever, Windows 7 was Chuck Norris's Idea, Britney Spears stopped singing "HIT me baby one more time", because of Chuck Norris, I don't know why, Chuck Norris will attain statehood in 2009. His state flower will be the Magnolia. Chuck Norris is my Homeboy. Chuck Norris is ten feet tall, weighs two-tons, breathes fire, and could eat a hammer and take a shotgun blast standing.</p>
+    </section>
+
+    <section class="signup">
+      <form action="" class="signup">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email Address">
+        <input type="submit" value="Sign me up!">
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; Valpak</p>
+    </footer>
+
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+
+    $(function() {
+      $('.toggleNav').on('click',function() {
+        $('.flex-nav ul').toggleClass('open');
+      });
+    });
+
+  </script>
+</body>
+</html>
